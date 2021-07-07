@@ -1,0 +1,65 @@
+
+<html>
+
+<head>
+<style type = "text/css">
+h1 {color:red}
+p {color:black}
+</style>
+</head>
+
+<body>
+<h1 style = "background-color: cyan"; align = "center">head 1</h1>
+<big><p style = "background-color: salmon">this is <sup>a</sup><sub>paragraph</sub></p></big>
+</body>
+
+</html>
+
+
+<div style="color:#00FF00">
+  <h3>This is a header</h3>
+  <p>This is a paragraph.</p>
+</div>
+
+<a href = "https://github.com/">click this link to github</a>
+<img src = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fdpic.tiankong.com%2Fme%2Fjw%2FQJ6212712267.jpg%3Fx-oss-process%3Dstyle%2Fshow&refer=http%3A%2F%2Fdpic.tiankong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628235836&t=b7408ad522a2b2a4095c8e3871e0190a" />
+
+
+<table border = "1">
+
+<tr>
+<th>Heading 1</th>
+<th>Heading 2</th>
+<th>Heading 3</th>
+</tr>
+
+<tr>
+<td>A1</td>
+<td>A2</td>
+<td></td>
+</tr>
+
+<tr>
+<td>row 2 cell 1</td>
+<td>row 2 cell 2</td>
+<td>row 2 cell 3</td>
+</tr>
+
+</table>
+
+<ul>
+<li>object 1</li>
+<li>object 2</li>
+</ul>
+
+<ol>
+<li>object A</li>
+<li>object B</li>
+</ol>
+
+<dl>
+<dt>object 1</dt>
+<dd>difinition 1</dd>
+<dt>object 2</dt>
+<dd>definition 2</dd>
+</dl>
