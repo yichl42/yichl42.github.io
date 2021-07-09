@@ -1,0 +1,47 @@
+<html>
+<body>
+
+<button type = "button" 
+onclick = "document.getElementById('demo').innerHTML = Date()">click this button to show the date and time</button>
+<p id = "demo"></p>
+
+</body>
+</html>
+
+
+<html>
+<body>
+
+<p id = "demo">click this button to show what's behind it</p>
+
+<button type = "button"
+onclick = "myFunction()">click me~!</button>
+
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "You found me~!"
+}
+</script>
+
+</body>
+</html>
+
+<html>
+<body>
+
+<button type = "button"
+onclick = "myFunction()">click me~！</button>
+
+<p id = "demo">look what I have changed</P>
+
+<script>
+function myFunction() {
+document.getElementById("demo").style.color = "tomato";
+document.getElementById("demo").style.backgroundColor = "cyan";
+document.getElementById("demo").style.fontSize = "30px";
+document.getElementById("demo").style.textAlign = "center";
+}
+</script>
+
+</body>
+</html>
