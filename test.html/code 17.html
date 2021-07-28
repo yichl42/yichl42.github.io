@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <style>
+            button.b {
+                background-color: cyan;
+                color: tomato;
+            }
+            button.c {
+                background-color: #00FF00;
+                color: blueviolet;
+            }
+            button.d {
+                background-color: brown;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id = "demo1">check this out</p>
+        <button class = "b" type = "button"
+        onclick = "document.getElementById('demo1').innerHTML = Date()">button1</button>
+
+        <p id = "demo2">click this button pls</p>
+        <button class = "c" type = "button"
+        onclick = "myFunction1()">button2</button>
+        <script>
+            function myFunction1() {
+                document.getElementById("demo2").innerHTML = "you got me";
+            }
+        </script>
+
+        <p id = "demo3">check this one</p>
+        <button class = "d" type = "button"
+        onclick = "myFunction2()">button3</button>
+        <script>
+            function myFunction2() {
+                document.getElementById("demo3").style.backgroundColor = "seagreen";
+                document.getElementById("demo3").style.color = "black";
+                document.getElementById("demo3").style.fontSize = "40px";
+                document.getElementById("demo3").style.fontStyle = "italic";
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            input.a {
+                background-color: #00FF00;
+                color: black;
+            }
+            input.b {
+                background-color: aqua;
+                color: tomato;
+            }
+            input.c {
+                background-color: blueviolet;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action = "/demo/demo_form.asp">
+            Your name:<br>
+            <input class = "a" type = "text" name = "yourNameIs" value = ""><br>
+            Your job:<br>
+            <input class = "b" type = "text" name = "yourJobIs" value = ""><br>
+            <br>
+            <input class = "c" type = "submit" value = "submit~"><br>
+
+        </form>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            option {
+                font-size: 40px;
+                font-style: italic;
+            }
+            option.a {
+                background-color: #00FF00;
+                color: black;
+            }
+            option.b {
+                background-color: aqua;
+                color: tomato;
+            }
+            option.c {
+                background-color: blueviolet;
+                color: chartreuse;
+            }
+            option.d {
+                background-color: brown;
+                color: crimson;
+            }
+        </style>
+    </head>
+
+    <body>
+        <select>
+            <option class = "a" value = "Lin">Lin</option>
+            <option class = "b" value = "Xin">Xin</option>
+            <option class = "c" value = "Qin">Qin</option>
+            <option class = "d" value = "Pin">Pin</option>
+        </select>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            textarea.a {
+                background-color: aqua;
+                color: tomato;
+                font-size: 40px;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+
+    <body>
+        <textarea class = "a" cols = "30" rows = "20">this is the textarea</textarea>
+    </body>
+
+</html>
+
+
+
+<html>
+    <body>
+        <video width = "300" height = "200" controls = "controls" autoplay = "autoplay">
+            <source src = "/i/movie.webm" type = "video/webm">
+            <object width = "300" height = "200" data = "/i/movie.webm">
+                <embed width = "300" height = "200" src = "/i/movie.swf">    
+            </object>
+        </video>
+    </body>
+</html>
+
+
+
+<html>
+    <body>
+        <audio controls = "controls">
+            <source src = "/i/song.ogg" type = "audio/ogg">
+                <embed height = "300" width = "200" src = "/i/song.ogg">
+        </audio>
+    </body>
+</html>
