@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .blue-container{
+            width: 500px;
+            border: 1px solid;
+            margin: 0 auto;
+        }
+        .blue-container img{
+            width: 100%;
+        }
+        .input-container{
+            width: 100%;
+            height: 42px;
+            border-radius: 21px;
+            outline: none;
+            font-size: 18px;
+            color: blueviolet;
+            padding: 0 12px;
+        }
+        .button-container{
+            border: 1px solid red;
+            padding: 12px 0;
+        }
+        .button-container .button{
+            display: inline-block;
+            width: calc(20% - 4px);
+            text-align: center;
+            margin-bottom: 12px;
+            position: relative;
+        }
+        .button-container .button .aaaaa{
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: red;
+            display: none;
+        }
+        .button-container .button:hover .aaaaa{
+            color: gold;
+            display: block;
+        }
+        .button-container .button:hover{
+            background: red;
+        }
+        .button-container .button:hover .title{
+            color: #fff;
+        }
+        .button-container .button .icon{
+            width: 100%;
+            height: 60px;
+        }
+        .button-container .button .icon img{
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+
+        }
+        .button-container .button .title{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div><!--红-->
+        <div>
+
+        </div><!--黄-->
+        <div><!--黄-->
+            <div class="blue-container"><!--蓝-->
+                <div><!--绿-->
+                    <div>
+                        <img src="./image/google-logo.jpg">
+                    </div><!--黑-->
+                </div>
+                <div><!--绿-->
+                    <div>
+                        <input class="input-container" placeholder="asasdlals" type="search">
+                    </div><!--黑-->
+                </div>
+                <div><!--绿-->
+                    <div class="aaaaa" onclick="test()">生成按钮</div>
+                    <div class="button-container" id="container"></div><!--黑-->
+                </div>
+            </div>
+        </div>
+        <div>
+            
+        </div><!--黄-->
+    </div>
+    <script>
+        function test (){
+            // 文本标签 文本节点
+            // document.getElementById("testButton").innerText = "你好";
+            // document.getElementById("testButton").innerHTML = "哈哈哈";
+            var contaner = document.getElementById('container');
+            var html = '';
+            for(var i = 0; i < 100; i++){
+                html += `
+                    <div class="button"><!--细红-->
+                        <div class="aaaaa" onclick="test1(${i})">按钮</div>
+                        <div class="icon"><img src="./image/icon.png"/></div><!--图标-->
+                        <div class="title" id="testButton">Github</div><!--标题-->
+                    </div>
+                `
+            }
+            contaner.innerHTML = html;
+        }
+
+        function test1(i){
+            alert('当前点击：' + (i+1))
+        }
+    </script>
+</body>
+</html>
