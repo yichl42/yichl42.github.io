@@ -1,0 +1,1449 @@
+<html>
+    <head>
+        <style>           
+            body {
+                background: #FFFFFF;
+                margin: 0;
+            }
+
+            #backgroundImage {
+                border: none;
+                height: 100%;
+                pointer-events: none;
+                position: fixed;
+                top: 0;
+                visibility: hidden;
+                width: 100%;
+            }
+
+            [show-background-image] #backgroundImage {
+                visibility: visible;
+            }
+    
+            img {
+                width:50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 500;
+            }
+            input.inputWrapper {
+                width: 50%;
+                height: 5%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid gray;
+                border-radius: 50px;
+                
+            }     
+            img.a {
+                width: 100px;
+                height: 100px;
+                margin: 10 1500 500 50;
+            }
+            img.b {
+                width: 100px;
+                height: 100px;
+                margin: 10 1500 500 100;
+            }
+            img.c {
+                width: 100px;
+                height: 100px;
+                margin: 10 1500 500 150;
+            }
+            img.d {
+                width: 100px;
+                height: 100px;
+                margin: 10 1000 500 50;
+            }
+            img.e {
+                width: 100px;
+                height: 100px;
+                margin: 10 1000 550 100;
+            }
+            img.f {
+                width: 100px;
+                height: 100px;
+                margin: 10 1000 1000 150;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "content" style = "--ntp-theme-text-color: rgba(0,0,0,1); 
+            --ntp-theme-shortcut-background-color:rgba(241,243,244,1); --ntp-logo-color: inherit;">
+        <img src = "http://kidsparkeducation.org/sites/default/files/styles/full/public/media/misc/google-logo.jpg?itok=9c-Tituf"><br>
+
+        <input class = "inputWrapper" type = "search" name = "search" autocomplete = "off" 
+            spellcheck = "false" role = "combobox" aria-live = "polite" placeholder = "在Google上搜索，或者输入一个网址">
+
+        <div id = "container" style = "--column-count: 5; --row-count: 2;">
+            <a class = "tile" title = "百度一下，你就知道" href = "https://www.baidu.com/">
+                <div id="actionMenuButton" class="icon-more-vert" tabindex="0" title="更多操作" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </div>
+                
+                <cr-icon-button id="removeButton" class="icon-clear" tabindex="0" hidden="" title="移除" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+
+                <div class = "tile-icon">
+                    <img class = "a" draggable="false" src="http://img.improve-yourmemory.com/pic/37c9c16dd839df8ce3140d2840ea78f9-0.jpg">
+                    <div class="query-tile-icon" draggable="false" hidden=""></div>
+                </div>
+                <div class="tile-title title-ltr"><span>百度一下，你就知道</span></div>
+            </a>
+
+
+            <a class = "title" title = "w3school在线教程" href = "https://www.w3school.com.cn/">
+            <cr-icon-button id="actionMenuButton" class="icon-more-vert" tabindex="0" title="更多操作" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+                
+                <cr-icon-button id="removeButton" class="icon-clear" tabindex="0" hidden="" title="移除" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+
+                <div class = "tile-icon">
+                        <img draggable="false" class = "b" src="https://pic.qqtn.com/up/2016-2/201621983019.jpg">
+                    <div class="query-tile-icon" draggable="false" hidden=""></div>
+                </div>
+                <div class="tile-title title-ltr"><span>w3school 在线教程</span></div>
+            </a>
+
+
+            <a class = "title" title = "系统登录" href = "https://admin-test.exexm.com/SysHome">
+            <cr-icon-button id="actionMenuButton" class="icon-more-vert" tabindex="0" title="更多操作" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+                
+                <cr-icon-button id="removeButton" class="icon-clear" tabindex="0" hidden="" title="移除" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+
+                <div class = "tile-icon">
+                    <img draggable="false" class = "c" src="https://iknow-pic.cdn.bcebos.com/94cad1c8a786c91708595aecce3d70cf3ac75788?x-bce-process%3Dimage%2Fresize%2Cm_lfit%2Cw_600%2Ch_800%2Climit_1%2Fquality%2Cq_85%2Fformat%2Cf_jpg">
+                    <div class="query-tile-icon" draggable="false" hidden=""></div>
+                </div>
+                <div class="tile-title title-ltr"><span>系统主页</span></div>
+            </a>
+
+
+            <a class = "title" title = "SegmentFault 思否" href = "https://segmentfault.com/">
+            <cr-icon-button id="actionMenuButton" class="icon-more-vert" tabindex="0" title="更多操作" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+                
+                <cr-icon-button id="removeButton" class="icon-clear" tabindex="0" hidden="" title="移除" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+
+                <div class = "tile-icon">
+                    <img draggable="false" class = "d" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcdn.segmentfault.com%2Fv-5bfe56d3%2Fglobal%2Fimg%2Ftouch-icon-512.png&refer=http%3A%2F%2Fcdn.segmentfault.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1630744683&t=9711bf2ac09f785a8d83d5935e3774d5">
+                    <div class="query-tile-icon" draggable="false" hidden=""></div>
+                </div>
+                <div class="tile-title title-ltr"><span>SegmentFault 思否</span></div>
+            </a>
+
+
+            <a class = "title" title = "掘金" href = "https://juejin.cn/">
+            <cr-icon-button id="actionMenuButton" class="icon-more-vert" tabindex="0" title="更多操作" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+                
+                <cr-icon-button id="removeButton" class="icon-clear" tabindex="0" hidden="" title="移除" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+
+                <div class = "tile-icon">
+                    <img draggable="false" class = "e" src="https://img2.baidu.com/it/u=1854811223,2639756494&fm=26&fmt=auto&gp=0.jpg">
+                    <div class="query-tile-icon" draggable="false" hidden=""></div>
+                </div>
+                <div class="tile-title title-ltr"><span>掘金</span></div>
+            </a>
+
+
+            <a class = "title" title = "EXE" href = "https://www.yuque.com/exe/umi9g8/yivnz7">
+            <cr-icon-button id="actionMenuButton" class="icon-more-vert" tabindex="0" title="更多操作" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 10%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                        :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                        }
+                    }
+
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+                
+                <cr-icon-button id="removeButton" class="icon-clear" tabindex="0" hidden="" title="移除" aria-disabled="false" role="button">
+                    <style scope = "cr-icon-button">
+                    :host {
+                        --cr-icon-button-fill-color: var(--google-grey-refresh-700);
+                        --cr-icon-button-icon-start-offset: 0;
+                        --cr-icon-button-icon-size: 20px;
+                        --cr-icon-button-size: 36px;
+                        --cr-icon-button-height: var(--cr-icon-button-size);
+                        --cr-icon-button-transition: 150ms ease-in-out;
+                        --cr-icon-button-width: var(--cr-icon-button-size);
+                        
+                        -webkit-tap-highlight-color: transparent;
+                        border-radius: 50%;
+                        color: var(--cr-icon-button-stroke-color,
+                            var(--cr-icon-button-fill-color));
+                        cursor: pointer;
+                        display: inline-flex;
+                        flex-shrink: 0;
+                        height: var(--cr-icon-button-height);
+                        margin-inline-end: var(--cr-icon-button-margin-end,
+                            var(--cr-icon-ripple-margin));
+                        margin-inline-start: var(--cr-icon-button-margin-start);
+                        outline: none;
+                        overflow: hidden;
+                        user-select: none;
+                        vertical-align: middle;
+                        width: var(--cr-icon-button-width);
+                    }
+
+                    :host(:hover) {
+                    background-color: var(--cr-icon-button-hover-background-color,
+                                var(--cr-hover-background-color));
+                    }
+
+                    :host(:focus-visible:focus) {
+                    box-shadow: inset 0 0 0 2px var(--cr-icon-button-focus-outline-color,
+                                var(--cr-focus-outline-color));
+                    }
+
+                    :host(:active) {
+                    background-color: var(--cr-icon-button-active-background-color,
+                                var(--cr-active-background-color));
+                    }
+
+                    :host([disabled]) {
+                    cursor: initial;
+                            opacity: var(--cr-disabled-opacity);
+                            pointer-events: none;
+                    }
+
+                    :host(.no-overlap) {
+                    --cr-icon-button-margin-end: 0;
+                            --cr-icon-button-margin-start: 0;
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr]):not([multiple-icons_])) {
+                    transform: scaleX(-1);
+                    }
+
+                    :host-context([dir=rtl]):host(:not([dir=ltr])[multiple-icons_]) iron-icon {
+                    transform: scaleX(-1);
+                    }
+
+                    :host(:not([iron-icon])) #maskedImage {
+                    -webkit-mask-image: var(--cr-icon-image);
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+                            -webkit-mask-size: var(--cr-icon-button-icon-size);
+                            -webkit-transform: var(--cr-icon-image-transform, none);
+                            background-color: var(--cr-icon-button-fill-color);
+                            height: 100%;
+                            transition: background-color var(--cr-icon-button-transition);
+                            width: 100%;
+                    }
+
+                    #icon {
+                    align-items: center;
+                            border-radius: 4px;
+                            display: flex;
+                            height: 100%;
+                            justify-content: center;
+                            padding-inline-start: var(--cr-icon-button-icon-start-offset);
+                            
+                            position: relative;
+                            width: 100%;
+                    }
+
+                    iron-icon {
+                    --iron-icon-fill-color: var(--cr-icon-button-fill-color);
+                            --iron-icon-stroke-color: var(--cr-icon-button-stroke-color, none);
+                            --iron-icon-height: var(--cr-icon-button-icon-size);
+                            --iron-icon-width: var(--cr-icon-button-icon-size);
+                            transition: fill var(--cr-icon-button-transition),
+                                stroke var(--cr-icon-button-transition);
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :host {
+                    --cr-icon-button-fill-color: var(--google-grey-refresh-500);
+                    }
+
+                    }
+
+                    </style>
+                    <div id = "icon">
+                        <div id = "maskedImage"></div>
+                    </div>
+                </cr-icon-button>
+
+                <div class = "tile-icon">
+                    <img draggable="false" class = "f" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fjfz-erp2.oss-cn-hangzhou.aliyuncs.com%2Fimages%2Fdc_upload%2FHk9zVNwRV5o47ZTFS2g8ycha1cAWBK7m98R9vunU.jpeg&refer=http%3A%2F%2Fjfz-erp2.oss-cn-hangzhou.aliyuncs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1630744752&t=8aea726593d834e3c4a90f5f83e82914">
+                    <div class="query-tile-icon" draggable="false" hidden=""></div>
+                </div>
+                <div class="tile-title title-ltr"><span>EXE</span></div>
+            </a>
+
+        </div>
+    </body>
+</html>
