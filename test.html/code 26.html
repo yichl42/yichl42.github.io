@@ -1,0 +1,296 @@
+<html>
+    <body>
+        <ul>
+            <li>obj1</li>
+            <li>obj2</li>
+            <li>obj3</li>
+            <li>obj4</li>
+        </ul>
+
+        <ol>
+            <li>abj1</li>
+            <li>abj2</li>
+            <li>abj3</li>
+            <li>abj4</li>
+        </ol>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            button.a {
+                background: #00FF00;
+                color: black;
+                width: 200px;
+                height: 100px;
+            }
+            button.b {
+                background-color: cyan;
+                color: tomato;
+                font-size: 40px;
+            }
+            button.c {
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <p id = "demo1">check this out</p>
+        <button class = "a" type = "button"
+        onclick = "document.getElementById('demo1').innerHTML = Date()">button1</button>
+
+        <p id = "demo2">check this out</p>
+        <button class = "b" type = "button"
+        onclick = "myFunction1()">button2</button>
+        <script>
+            function myFunction1() {
+                document.getElementById("demo2").innerHTML = "you got me~";
+            }
+        </script>
+
+        <p id = "demo3">check this out</p>
+        <button class = "c" type = "button"
+        onclick = "myFunction2()">button3</button>
+        <script>
+            function myFunction2() {
+                document.getElementById("demo3").style.backgroundColor = "cyan";
+                document.getElementById("demo3").style.color = "tomato";
+                document.getElementById("demo3").style.fontSize = "40px";
+                document.getElementById("demo3").style.fontStyle = "italic";
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            document.getElementById("demo1").innerHTML = "Eason"+"Lin"    
+        </script>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            img {
+                opacity: 50%;
+            }
+            img:hover {
+                opacity: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <img src = "http://kidsparkeducation.org/sites/default/files/styles/full/public/media/misc/google-logo.jpg?itok=9c-Tituf">
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            p {
+                background-color: lightgreen;
+                color: black;
+                width: 200px;
+                height: 300px;
+                transition: width 2s, height 1s, transform 1s;
+                transition-delay: 1s;
+            }
+            p:hover {
+                width: 400px;
+                height: 500px;
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+    <body>
+        <p class = "a">put it over me</p>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">add those words together</p>
+        <script>  
+            document.getElementById("demo1").innerHTML = "EASON" + 911
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var x = 7;
+            var y = 8;
+            var z = x - y;
+            document.getElementById("demo1").innerHTML = z;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var a = 101;
+            var b = 202;
+            var c = a * b;
+            document.getElementById("demo1").innerHTML = c;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var text1 = "EASON";
+            var text2 = "Lin";
+            var text3 = text1 + text2;
+            document.getElementById("demo1").innerHTML = text3;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var obj1 = 7 + "EASON";
+            var obj2 = "LIN" + 6;
+            var sum = obj1 + obj2;
+            document.getElementById("demo1").innerHTML = sum;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var a = 101;
+            var b = 202;
+            var c = a * b;
+            document.getElementById("demo1").innerHTML = c;
+        </script>
+    </body>
+</html>
+
+// power
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var a = 101;
+            var b = 202;
+            var c = a**2;
+            document.getElementById("demo1").innerHTML = c;
+        </script>
+    </body>
+</html>
+
+//赋值
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var x = 9;
+            x += 9;
+            document.getElementById("demo1").innerHTML = x;
+        </script>
+</html>
+
+//review
+int 整数 double 小数 string 字符串 array 列 arrayList 列表 intArrayList 整数列 boolean 布尔正误
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var a = Boolean(9<10);
+            var b = Boolean(10<9);
+            document.getElementById("demo1").innerHTML = a + b;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var date;
+            switch (new Date().getDay()) {
+                case 0:
+                    date = "Monday";
+                    break;
+                case 1:
+                    date = "Tuesday";
+                    break;
+                case 2:
+                    date = "Wednesday";
+                    break;
+                case 3:
+                    date = "Thursday";
+                    break;
+                case 4:
+                    date = "Friday";
+                    break;
+                case 5:
+                    date = "Saturday";
+                    break;  
+                case 6:
+                    date = "Sunday";
+            }
+            document.getElementById("demo1").innerHTML = "Today is " + date;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i;
+            var text = "";
+            for (i = 0; i < 10; i++) {
+                text += "<br>the number is " + i;
+            }
+            document.getElementById("demo1").innerHTML = text;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i;
+            var text = "";
+            for (i = 0; i < 10; i++) {
+                text = "<br>the number is " + i;
+                i++; //add twice
+            }
+            document.getElementById("demo1").innerHTML = text;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i = 0;
+            var text = "";
+            while (i < 10) {
+                text += "<br>the number is " + i;
+                i++;
+            }
+            document.getElementById("demo1").innerHTML = text;
+        </script>
+    </body>
+</html>
