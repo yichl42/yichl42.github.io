@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <style>
+            p {
+                display: block;  
+            }
+            p:hover {
+                background: #00FF00;
+                color: black;
+                font-size: 50px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>put it over me</p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            p {
+                background-color: aqua;
+                color: tomato;
+                width: 200px;
+                height: 300px;
+                transition: width 2s, height 1s, transform 1s;
+                transition-delay: 1s;
+            }
+            p:hover {
+                width: 600px;
+                height: 500px;
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+        <body>
+            <p>put it over me</p>
+        </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"];
+            document.getElementById("demo1").innerHTML = a[0];
+        </script>
+    </body>
+</html>
+
+//length
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            document.getElementById("demo1").innerHTML = a.length;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            document.getElementById("demo1").innerHTML = a[a.length - 1];
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            document.getElementById("demo1").innerHTML = a;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.pop();
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.shift();
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.unshift("elife");
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+//a.shift() 删第一个词
+//a.unshift("xx")最前加词
+//a.pop()删最后一个词
+//a.push("xx")最后加词
+
+
+//a.sort()
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.unshift("elife");
+            a.sort();
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+//a.reverse()
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.unshift("elife");
+            a.reverse();
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var eason = {
+                age:19,
+                firstName:"Eason",
+                lastName:"Lin",
+                gender:"male"
+            }
+            document.getElementById("demo1").innerHTML = eason.firstName + eason.lastName + " is " +
+                 eason.age + " years old and he is a " + eason.gender;
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var Eason = {
+                age:19,
+                firstname:"Eason",
+                lastname:"Lin",
+                job:"worker",
+                gender:"male"
+            }
+            document.getElementById("demo1").innerHTML = Eason.firstname + " " + Eason.lastname + " is " + Eason.age + " years old." + 
+                "his job is a " + Eason.job + " he is a " + Eason.gender;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var Eason = myCalculate(10, 5);
+            document.getElementById("demo1").innerHTML = Eason;
+            function myCalculate(x, y) {
+                return result = x/y;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = myFunction(5, 6);
+            document.getElementById("demo1").innerHTML = a;
+
+            function myFunction(x, y) {
+                return a = x * y;
+            }
+        </script>
+    </body>
+</html>
