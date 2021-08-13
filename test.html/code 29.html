@@ -1,0 +1,144 @@
+<html>
+    <body>
+        <script>
+            document.write(Date());
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h1 onclick = "this.innerHTML = 'you got me~'">click me~</h1>
+    </body>
+</html>
+
+
+//alert
+<html>
+    <body>
+        <button id = "button">button1</button>
+        <script>
+            document.getElementById("button").addEventListener("click", function() { alert("you got me ~");});
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <button id = "demo1">click me~</button>
+        <script>
+            document.getElementById("demo1").addEventListener("click", function() {alert("this one");});
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <button id = "demo1">click me~</button>
+        <script>
+            var a = document.getElementById("demo1");
+            a.addEventListener("click", myFunction1);
+            a.addEventListener("click", myFunction2);
+
+            function myFunction1() {
+                alert("first one");
+            }
+            function myFunction2() {
+                alert("second one");
+            }
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <button id = "demo1">click me ~</button>
+        <script>
+            var a = document.getElementById("demo1")
+            a.addEventListener("click", myFunction);
+            a.addEventListener("click", myFunction1);
+            a.addEventListener("click", myFunction2);
+            function myFunction() {
+                alert("appears this one");
+            }
+            function myFunction1() {
+                alert ("the second one");
+            }
+            function myFunction2() {
+                alert("third one");
+            }
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <button id = "demo1">click me</button>
+        <script>
+            var eason = document.getElementById("demo1");
+            eason.addEventListener("click", myFunction1);
+            eason.addEventListener("click", myFunction2);
+            eason.addEventListener("click", myFunction3);
+            eason.addEventListener("click", myFunction4);
+
+            function myFunction1() {
+                alert ("remember me?");
+            }
+            function myFunction2() {
+                alert ("wanna quit?");
+            }
+            function myFunction3() {
+                alert ("I'm still here");
+            }
+            function myFunction4() {
+                alert ("okay bye");
+            }
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            function myFunction(x, y) {
+                if (x > y) {
+                    return x;
+                } if (x < y) {
+                    return y;
+                } else { // x = y
+                    return 0;
+                }
+            }
+            document.getElementById("demo1").innerHTML = myFunction(20, 4);
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <body>
+        <button id = "demo1">click me</button>
+        <script>
+            var biSharp = document.getElementById("demo1");
+            biSharp.addEventListener("click", myFunction1);
+            biSharp.addEventListener("click", myFunction2);
+            biSharp.addEventListener("click", myFunction3);
+
+            function myFunction1() {
+                alert ("miss me?");
+            }
+            function myFunction2() {
+                alert ("don't forget me");
+            }
+            function myFunction3() {
+                alert ("swear to me");
+            }
+        </script>
+    </body>
+</html>
