@@ -1,0 +1,4311 @@
+<html>
+<head>
+    <style type="text/css">
+        h1 {
+            color: red
+        }
+
+        p {
+            color: black
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="background-color: cyan" ; align="center">head 1</h1>
+    <big>
+        <p style="background-color: salmon">this is <sup>a</sup><sub>paragraph</sub></p>
+    </big>
+</body>
+
+</html>
+
+
+<div style="color:#00FF00">
+    <h3>This is a header</h3>
+    <p>This is a paragraph.</p>
+</div>
+
+<a href="https://github.com/">click this link to github</a>
+<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fdpic.tiankong.com%2Fme%2Fjw%2FQJ6212712267.jpg%3Fx-oss-process%3Dstyle%2Fshow&refer=http%3A%2F%2Fdpic.tiankong.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628235836&t=b7408ad522a2b2a4095c8e3871e0190a" />
+
+
+<table border="1">
+
+    <tr>
+        <th>Heading 1</th>
+        <th>Heading 2</th>
+        <th>Heading 3</th>
+    </tr>
+
+    <tr>
+        <td>A1</td>
+        <td>A2</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>row 2 cell 1</td>
+        <td>row 2 cell 2</td>
+        <td>row 2 cell 3</td>
+    </tr>
+
+</table>
+
+<ul>
+    <li>object 1</li>
+    <li>object 2</li>
+</ul>
+
+<ol>
+    <li>object A</li>
+    <li>object B</li>
+</ol>
+
+<dl>
+    <dt>object 1</dt>
+    <dd>difinition 1</dd>
+    <dt>object 2</dt>
+    <dd>definition 2</dd>
+</dl>
+
+<html>
+
+<head>
+    <style>
+        .cities { 
+background-color:cyan;
+color:salmon;
+margin:20px;
+padding:30px;          
+}
+</style>
+</head>
+
+<body>
+    <div class="cities">
+        <h2>London</h2>
+
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+            metropolitan area of over 13 million inhabitants.</p>
+
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back
+            to its founding by the Romans, who named it Londinium.</p>
+    </div>
+
+    <div class="cities">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+            and the most populous metropolitan area in the world.</p>
+    </div>
+
+    <div class="cities">
+        <h1>Paris</h1>
+        <p>Paris is the capital and most populous city of France.</p>
+    </div>
+
+</body>
+
+</html>
+
+<html>
+
+<head>
+    <style>
+        #Header {
+background-color:olive;
+color:white;
+padding:30px;
+text-align:center;
+}
+</style>
+</head>
+
+<body>
+    <style>
+        .cities {
+background-color:cyan;
+color:salmon;
+padding:20px;
+text-align:center;
+}
+</style>
+</body>
+
+<h1 id="Header">The Cities</h1>
+<p class="cities">Beijing</p>
+<p>the capital of China</p>
+
+<p class="cities">ShangHai</p>
+<p>the largest city of China<p>
+
+        <p class="cities">Xiamen</p>
+        <p>The city innit</p>
+
+</html>
+
+
+<html>
+
+<p><a href="#C3">jump to Chapter 3</a></p>
+<p><a href="#C7">jump to Chapter 7</a></p>
+
+<h1>Chapter 1</h1>
+<p>the content of that chapter</p>
+
+<h1>Chapter 2</h1>
+<p>the content of that chapter</p>
+
+<h1 id="C3">Chapter 3</h1>
+<p>the content of that chapter</p>
+
+<h1>Chapter 4</h1>
+<p>the content of that chapter</p>
+
+<h1>Chapter 5</h1>
+<p>the content of that chapter</p>
+
+<h1>Chapter 6</h1>
+<p>the content of that chapter</p>
+
+<h1 id="C7">Chapter 7</h1>
+<p>the content of that chapter</p>
+
+<h1>Chapter 8</h1>
+<p>the content of that chapter</p>
+
+<h1>Chapter9</h1>
+<p>the content of that chapter</p>
+
+<h1>Chapter 10</h1>
+<p>the content of that chapter</p>
+
+<h1>Chapter 11</h1>
+<p>the content of that chapter</p>
+
+
+</html>
+
+<img src="URL">
+<iframe src="URL" width="400" height="300" frameborder="0"></iframe>
+
+
+
+<html>
+
+<body>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">click this button to show the
+        date and time</button>
+    <p id="demo"></p>
+
+</body>
+
+</html>
+
+
+<html>
+
+<body>
+
+    <p id="demo">click this button to show what's behind it</p>
+
+    <button type="button" onclick="myFunction()">click me~!</button>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "You found me~!"
+        }
+    </script>
+
+</body>
+
+</html>
+
+<html>
+
+<body>
+
+    <button type="button" onclick="myFunction()">click me~！</button>
+
+    <p id="demo">look what I have changed</P>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.color = "tomato";
+            document.getElementById("demo").style.backgroundColor = "cyan";
+            document.getElementById("demo").style.fontSize = "30px";
+            document.getElementById("demo").style.textAlign = "center";
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+-----------------------------------------
+
+<html>
+    <body>
+        <article>
+            <h1>What Does WWF Do?</h1>
+            <p>WWF's mission is to stop the degradation of our planet's natural environment,
+               and build a future in which humans live in harmony with nature.</p>           
+            <header>
+                <h1>What Does WWF Do?</h1>
+                <p>WWF's mission:</p>
+            </header>
+
+            <section>
+                <h1>WWF</h1>
+                <p>The World Wide Fund for Nature (WWF) is....</p>
+            </section>
+
+            <aside>
+                <h4>Epcot Center</h4>
+                <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+            </aside>
+
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/jquery/">jQuery</a>
+            </nav>
+
+            <footer>
+                <p>Posted by: Hege Refsnes</p>
+                <p>Contact information: <a href="mailto:someone@example.com">
+                   someone@example.com</a>.</p>
+            </footer>
+        </article>
+    </body>
+</html>
+
+<html>
+    <body>
+
+        <form action = "/demo/demo_form.asp">
+            First Name: <br>
+            <input type = "text" name = "firstname" value = ""> <br>
+            Last Name: <br>
+            <input type = "text" name = "lastname" value = ""> <br>
+            <br>
+            <input type = "submit" value = "submit">
+            
+        </form>
+
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <body>
+
+        <form action = "/demo/demo_form.asp">
+        
+            Your father's name: <br>
+            <input type = "text" name = "yourfathername" value = "" ><br>
+            Your mother's name: <br>
+            <input type = "text" name = "yourmothername" value = ""><br>
+            <br>
+            Click this button to submit: <br>
+            <br> 
+            <input type = "submit" value = "submit~">
+        
+        </form>
+
+    </body>
+</html>
+
+<html>
+    <Body>
+
+        <select> 
+            <option value = "banana">banana</option>
+            <option value = "apple">apple</option>
+            <option value = "peach">peach</option>
+            <option value = "taco">taco</option>
+        </select>
+
+    </Body>
+</html>
+
+<html>
+    <body>
+
+        <form action = "/demo/demo_form.asp">
+        
+        Your favorite fruit: <br>
+        <input type = "text" name = "favoriteFruit" value = ""><br>
+        Your favorite vegetable: <br>
+        <input type = "text" name = "favoriteVegetable" value = ""><br>
+        <br>
+        Click this button to submit<br>
+        <br>
+        <input type = "submit" value = "submit~"><br>
+
+    </form>
+    </body>
+</html>
+
+<html>
+    <body>
+
+        <select>
+            <option value = "car">car</option>
+            <option value = "bus">bus</option>
+            <option value = "taxi">taxi</option>
+            <option value = "van">van</option>
+
+        </select>
+
+    </body>
+</html>
+
+
+<textarea rows = "30" cols = "20">
+    text area 
+</textarea>
+
+
+<html>
+    <body>
+
+        <button type = "button"
+        onclick = "myFunction()">click me ~</button>
+
+        <p id = "demo">click the button above to see what would change</p>
+
+        <script> 
+        function myFunction() {
+        document.getElementById("demo").innerHTML = "you got me ~"
+        }    
+        </script>
+
+        <form action = "/demo/demo_form.asp">
+
+        Your nationality: <br>
+        <input type = "text" name = "nationality" value = ""> <br>
+        Your address: <br>
+        <input type = "text" name = "address" value = ""> <br>
+        <br>
+        <input type = "submit" value = "submit ~"> <br>
+        <br>
+
+        </form>
+
+        <select>
+
+            <option value = "Ronaldo">Ronaldo</option>
+            <option value = "Messi">Messi</option>
+            <option value = "Benzema">Benzema</option>
+            <option value = "Ozil">Ozil</option>
+            <option value = "Neymar">Neymar</option>
+
+        </select> 
+
+        <textarea rows = "40" cols = "200">
+            choose a player and write a brief description for him
+        </textarea>
+
+    </body>
+</html>
+
+
+-----------------------------------------
+
+<html>
+    <body>
+
+        <p id = "demo">check this button out to see what would change ~</p>
+
+        <button type = "button"
+        onclick = "myFunction()">click me ~</button>
+
+
+        <script>
+        function myFunction() {
+            document.getElementById("demo").style.color = "salmon";
+            document.getElementById("demo").style.backgroundColor = "cyan";
+            document.getElementById("demo").style.fontSize = "60px";
+            document.getElementById("demo").style.textAlign = "center";
+        }
+        </script>
+
+        <form action = "/demo/demo_form.asp">
+
+        Your name: <br>
+        <input type = "text" name = "yourname" value = ""> <br>
+        Your job: <br> 
+        <input type = "text" name = "yourjob" value = ""> <br>
+        <br>
+        <input type = "submit" value = "submit ~"> <br>
+
+        </form>
+
+        <select>
+            <option value = "Nokia">Nokia</option>
+            <option value = "Apple">Apple</option>
+            <option value = "Samsung">Samsung</option>
+            <option value = "Huawei">Huawei</option>
+        </select>
+
+        <textarea rows = "30" cols = "200">
+            pick one type of cellphone and write a brief description about it
+        </textarea>
+
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+
+        body {
+        background-color: deepskyblue;
+        }
+        
+        h2 {
+        color:darkviolet;
+        font-size: 30px;
+        text-align: center;
+        }
+        
+        p {
+        color: lawngreen;
+        text-align: center;
+        padding: 200px;
+        }
+        
+        </style>
+
+    </head>
+
+    <body>
+
+    <h2> this is the heading </h2>
+    <p> this is the paragraph</p>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+        <style>
+            body {  
+                background-color: aqua;
+            }
+
+            h1 {
+                color:chocolate;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            p {
+                color:brown;
+                font-size: 100px;
+                text-align: center;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <h1>if I were the sea</h1>
+
+        <p>long may the sun shine</p>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+
+        .center {
+        background-color: cyan;
+        color: tomato;
+        text-align:center;
+        font-size: 50px;
+        }
+        
+        body {
+            background-color: #00FF00;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1 class = "center">this part should be at the center</h1>
+        <p class = "center">this paragraph should also be at the center</p>
+        <p class = "center">this part should be at the center as well</p>
+    </body>
+
+</html>
+
+<html>
+    <head>
+
+        <style>
+        #demo {
+            background-color: blueviolet;
+            color:aqua;
+            font-size: 60px;
+            text-align: center;
+            padding:30px;
+        }
+
+        body {
+            background-color: tomato;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>nothing would change</h1>
+        <p id = "demo">this would change</p>
+        <p>this won't change</p>
+    </body>
+
+</html>
+
+<html>
+    <head>
+        <style>
+        * {
+            background-color:sandybrown;
+            color:seagreen;
+            text-align: center;
+            padding: 30px;
+            font-size: 40px;
+        }
+
+        body {
+            background-color:darkblue;
+        }
+
+        </style>
+        
+    </head>
+
+    <body>
+    <h1>this would change</h1>
+    <p>this would also change</p>
+    <h2>this would change as well</h2>
+    <p>this would definitely change</p>
+    </body>
+
+</html>
+
+<html>
+    <head>
+        <style>
+        h1, h2 {
+            background-color:sandybrown;
+            color:seagreen;
+            text-align: center;
+            padding: 30px;
+            font-size: 40px;
+        }
+        
+        p {
+            background-color: #00FF00;
+            color:aqua;
+            text-align: center;
+            padding: 60px;
+            font-size: 20px;
+        }
+
+        body {
+            background-color:darkblue;
+        }
+
+        </style>
+        
+    </head>
+
+    <body>
+    <h1>this would change</h1>
+    <p>this would also change</p>
+    <h2>this would change as well</h2>
+    <p>this would definitely change</p>
+    </body>
+
+</html>
+
+
+<html>
+    <body>
+
+    <h1 style = "background-color: #00FF00;
+    color:aqua;
+    text-align: center;
+    padding: 60px;
+    font-size: 20px">this would change</h1>
+    <p>this would also change</p>
+    <h2>this would change as well</h2>
+    <p>this would definitely change</p>
+
+    </body>       
+
+</html>
+
+<html>
+    <head>
+
+        <p id = "demo">check this out</p>
+
+        <button type = "button"
+        onclick = "myFunction()">click me ~</button>
+        
+        <script> 
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "this would change";
+        }
+        </script>
+
+        <br>
+        <form action = "/demo/demo_form.asp">
+
+        which one: <br>
+        <input type = "text" name = "thisOneIs" value = ""><br>
+        Who you are: <br>
+        <input type = "text" name = "WeAre" value = ""><br>
+        <br>
+        <input type = "submit" value = "submit">
+
+        </form>
+
+    </head>
+
+    <body>
+        <select>
+            <option value = "Obj1">Obj1</option>
+            <option value = "Obj2">Obj2</option>
+            <option value = "Obj3">Obj3</option>
+            <object value = "Obj4">Obj4</object>
+        </select>
+
+        <textarea rows = "90px" cols = "400px">
+            this is the textarea
+        </textarea>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style type = "text/css">
+
+        h1 {color:aqua; text-align: center; background-color: #00FF00;}
+        p {color:blueviolet; text-align: center; background-color: crimson;}
+        
+        </style>
+
+    </head>
+
+    <body>
+        <h1>I'm married</h1>
+        <p>It's for you</p>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <style type = "text/css">
+            h1 {color:crimson; background-color: blue; text-align: center;}
+            p {color:#00FF00; background-color: chocolate; text-align: center;}
+            h2 {color: cyan; background-color: blueviolet; text-align: center;}      
+        </style>
+    </head>
+
+    <body>
+        <h1>this is the header one</h1>
+        <p>this is the paragraph</p>
+        <h2>this is the header two</h2>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style type = "text/css">
+            #demo {color:red; background-color:blueviolet; text-align: center;}
+            h2 {color:blue;}
+        </style>
+    </head>
+
+    <body>
+        <h1 id = "demo">this is the header one</h1>   
+        <h2>this is the header two</h2>
+        <p>this is the paragraph</p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style type = "text/css">
+            .demo {color:red; background-color:blueviolet; text-align: center;}
+            h2 {color:blue;}
+        </style>
+    </head>
+
+    <body>
+        <h1 class = "demo">this is the header one</h1>   
+        <h2>this is the header two</h2>
+        <p class = "demo">this is the paragraph</p>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style type = "text/css">
+            h1.normal {font-style: normal; font-size: 40px; color:aquamarine; background-color: #00FF00; text-align: center;}
+            p.italic {font-style: italic; font-size: 30px; color:blueviolet; background-color: bisque;}
+            h2.oblique {font-style: oblique; font-size: 90px; color:crimson; background-color: darkcyan; text-align: center;}
+        </style>
+    </head>
+
+    <body>
+        <h1 class = "normal">this should be normal</h1>
+        <p class = "italic">this should be italic</p>
+        <h2 class = "oblique">this should be oblique</h2>
+        <p class = "italic">this should be italic as well</p>
+    </body>
+
+
+</html>
+
+<html>
+    <head>
+        <style type = "text/css">
+            h1.italic {font-style: italic; font-size: 40px; color: cyan; background-color: crimson;}
+            p.normal {font-style: normal; font-size: 30px; color:darkgoldenrod; background-color: cornsilk}
+            h2.oblique {font-style: oblique; font-size:60px; color: darkgreen;}
+        </style>
+    </head>
+
+    <body>
+        <h1 class = "italic">this is the header one</h1>
+        <p class = "normal">this is the paragraph</p>
+        <h2 class = "oblique">this is the header two</h2>
+        <p class = "normal">this is the paragraph as well</p>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <button type = "button"
+        onclick = "document.getElementById('demo').innerHTML = Date()">button 1</button>
+        <p id = "demo">check this button 1</p>
+
+        <button type = "button"
+        onclick = "myFunction1()">button 2</button>
+        <p id = "demo1">check this button 2</p>
+        <script>
+        function myFunction1() {
+            document.getElementById("demo1").innerHTML = "you got me";
+        }
+        </script>
+
+        <button type = "button"
+        onclick = "myFunction2()">button 3</button>
+        <p id = "demo2">check this button 3</p>
+        <script>
+        function myFunction2() {
+            document.getElementById("demo2").style.backgroundColor = "green";
+            document.getElementById("demo2").style.color = "cyan";
+            document.getElementById("demo2").style.fontSize = "40px";
+            document.getElementById("demo2").style.fontStyle = "italic";
+        }
+        </script>
+
+        <form action = "/demo/demo_form.asp">
+
+        Your Name:<br>
+        <input type = "text" name = "yourName" value = ""><br>
+        Your job:<br>
+        <input type = "text" name = "yourJob" value = ""><br>
+        <br>
+        <input type = "submit" value = "submit">
+
+        </form>
+
+    </head>
+
+    <body>
+        <select>
+            <option value = "verb1">verb1</option>
+            <option value = "verb2">verb2</option>
+            <option value = "noun1">noun1</option>
+            <option value = "noun2">noun2</option>
+        </select>
+
+        <textarea rows = "80px" cols = "40px">
+            this is the textarea
+        </textarea>
+
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <button type = "button"
+        onclick = "document.getElementById('demo').innerHTML = Date()">button 1</button>
+        <p id = "demo">check button 1</p>
+
+        <button type = "button"
+        onclick = "myFunction1()">button 2</button>
+        <p id = "demo1">check button 2</p>
+        <script>
+            function myFunction1() {
+                document.getElementById("demo1").innerHTML = "you got me";
+            }
+        </script>
+
+        <button type = "button"
+        onclick = "myFunction2()">button 3</button>
+        <p id = "demo2">check the button 3</p>
+        <script>
+            function myFunction2() {
+                document.getElementById("demo2").style.backgroundColor = "cyan";
+                document.getElementById("demo2").style.color = "tomato";
+                document.getElementById("demo2").style.fontSize = "50px";
+                document.getElementById("demo2").style.textAlign = "center";
+                document.getElementById("demo2").style.fontStyle = "italic";
+            }
+        </script>   
+
+        <form action = "/demo/demo_form.asp">
+
+        Your name: <br>
+        <input type = "text" name = "yourName" value = ""><br>
+        Your job: <br>
+        <input type = "text" name = "yourJob" value = ""><br>
+        <br>
+        <input type = "submit" value = "submit~"><Br>
+
+        </form>
+
+    </head>
+
+    <body>
+        <select>
+            <option value = "option 1">option 1</option>
+            <option value = "option 2">option 2</option>
+            <option value = "option 3">option 3</option>
+            <option value = "option 4">option 4</option>
+        </select>
+
+        <textarea rows = "40px" cols = "80px">
+            this is the textarea
+        </textarea>
+    </body>
+
+</html>
+
+<html>
+    <head>
+        <style>
+            ol.a {list-style-type: square; list-style-position: inside; background-color: #00FF00;}
+            ul.b {list-style-type: upper-roman;}
+            ol.c {list-style-type: lower-alpha;}
+            ul.d {list-style-type: circle; list-style-position: outside; background-color: aqua;}
+            ol.a li {background-color: darkkhaki;}
+            ul.d li {background-color: gray;}
+        </style>
+    </head>
+
+    <body>
+        <ol class = "a">
+            <li>apple</li>
+            <li>peach</li>
+            <li>pear</li>
+        </ol>
+
+        <ul class = "b">
+            <li>cookie</li>
+            <li>biscuit</li>
+            <li>juice</li>
+        </ul>
+
+        <ol class = "c">
+            <li>fan</li>
+            <li>van</li>
+            <li>stan</li>
+        </ol>
+
+        <ul class = "d">
+            <li>space</li>
+            <li>place</li>
+            <li>face</li>
+        </ul>
+
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+</head>
+<body>
+<table id="customers">
+	<tr>
+		<th>Company</th>
+		<th>Contact</th>
+		<th>Address</th>
+		<th>City</th>
+	</tr>
+	<tr>
+		<td>Alibaba</td>
+		<td>Ma Yun</td>
+		<td>No. 699, Wangshang Road, Binjiang District</td>
+		<td>Hangzhou</td>
+	</tr>
+	<tr>
+		<td>APPLE</td>
+		<td>Tim Cook</td>
+		<td>1 Infinite Loop Cupertino, CA 95014</td>
+		<td>Cupertino</td>
+	</tr>
+	<tr>
+		<td>BAIDU</td>
+		<td>Li YanHong</td>
+		<td>Lixiang guoji dasha,No 58, beisihuanxilu</td>
+		<td>Beijing</td>
+	</tr>
+	<tr>
+		<td>Canon</td>
+		<td>Tsuneji Uchida</td>
+		<td>One Canon Plaza Lake Success, NY 11042</td>
+		<td>New York</td>
+	</tr>
+	<tr>
+		<td>Google</td>
+		<td>Larry Page</td>
+		<td>1600 Amphitheatre Parkway Mountain View, CA 94043</td>
+		<td>Mountain View</td>
+	</tr>
+	<tr>
+		<td>HUAWEI</td>
+		<td>Ren Zhengfei</td>
+		<td>Putian Huawei Base, Longgang District</td>
+		<td>Shenzhen</td>
+	</tr>
+	<tr>
+		<td>Microsoft</td>
+		<td>Bill Gates</td>
+		<td>15700 NE 39th St Redmond, WA 98052</td>
+		<td>Redmond</td>
+	</tr>
+	<tr>
+		<td>Nokia</td>
+		<td>Olli-Pekka Kallasvuo</td>
+		<td>P.O. Box 226, FIN-00045 Nokia Group</td>
+		<td>Helsinki</td>
+	</tr>
+	<tr>
+		<td>SONY</td>
+		<td>Kazuo Hirai</td>
+		<td>Park Ridge, NJ 07656</td>
+		<td>Park Ridge</td>
+	</tr>
+	<tr>
+		<td>Tencent</td>
+		<td>Ma Huateng</td>
+		<td>Tencent Building, High-tech Park, Nanshan District</td>
+		<td>Shenzhen</td>
+	</tr>
+</table>
+</body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <button type = "button"
+        onclick = "document.getElementById('demo1').innerHTML = Date()">button 1</button>
+        <p id = "demo1">check the button 1</p>
+
+        <button type = "button"
+        onclick = "myFunction1()">button 2</button>
+        <p id = "demo2">check the button 2</p>
+        <script>
+            function myFunction1() {
+                document.getElementById("demo2").innerHTML = "you found me";
+            }
+        </script>
+
+        <button type = "button"
+        onclick = "myFunction2()">button 3</button>
+        <p id = "demo3">check the button 3</p>
+        <script>
+            function myFunction2() {
+                document.getElementById("demo3").style.backgroundColor = "cyan";
+                document.getElementById("demo3").style.color = "tomato";
+                document.getElementById("demo3").style.textAlign = "center";
+                document.getElementById("demo3").style.fontSize = "50px";
+                document.getElementById("demo3").style.fontStyle = "oblique";
+                document.getElementById("demo3").style.padding = "30px";
+            }
+        </script>
+
+        <form action = "/demo/demo_form.asp">
+        Decision One: <br>
+        <input type = "text" name = "decisionOne" value = ""><br>
+        Decision Two: <br>
+        <input type = "text" name = "decisionTwo" value = ""><br>
+        <br>
+        <input type = "submit" value = "submit~"><br>
+        <br>
+        </form>
+
+    </head>
+
+    <body>
+        <select>
+            <option value = "CPU">CPU</option>
+            <option value = "CEO">CEO</option>
+            <option value = "COO">COO</option>
+            <option value = "CFO">CFO</option>    
+        </select>
+
+        <textarea rows = "40px" cols = "30px">
+            the textarea
+        </textarea>
+    </body>
+
+</html>
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+
+        ol.a {background-color: cyan; color: #00FF00; list-style-type: circle;}
+        ol.b {background-color: aquamarine; list-style-type: square;}
+        ul.c {background-color: chocolate; color:bisque; list-style-type: upper-roman;} 
+        ul.d {background-color: crimson; color:blueviolet; list-style-type: upper-alpha;}
+        ol.a li {background-color: coral;}
+        ol.b li {background-color: chocolate;}
+        ul.c li {background-color: blueviolet;}
+        ul.d li {background-color: burlywood;}
+        
+        </style>
+    </head>
+
+    <body>
+        <ol class = "a">
+            <li>obj1</li>
+            <li>obj2</li>
+            <li>obj3</li>
+            <li>obj4</li>
+        </ol>
+
+        <ol class = "b">
+            <li>abj1</li>
+            <li>abj2</li>
+            <li>abj3</li>
+            <li>abj4</li>
+        </ol>
+
+        <ul class = "c">
+            <li>cbj1</li>
+            <li>cbj2</li>
+            <li>cbj3</li>
+            <li>cbj4</li>
+        </ul>
+
+        <ul class = "d">
+            <li>kbj1</li>
+            <li>kbj2</li>
+            <li>kbj3</li>
+            <li>kbj4</li>
+        </ul>
+    </body>
+</html>
+
+<html>
+    <body>
+ 
+        <button type = "button"
+        onclick = "loadDoc()">click me</button>
+        
+        <p id = "demo">check this button</p>
+
+        <script>
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("demo").innerHTML = this.responseText;
+                    }
+                }
+                xhttp.open("GET", "/example/js/ajax_info.txt", true);
+                xhttp.send();
+            }
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 3px solid tomato;
+            }
+            table {
+                border-collapse: collapse;
+                width: 70%;
+                height: 50%;
+            }
+            th {
+            	text-align: center;
+                background-color: cornflowerblue;
+            }
+            td {
+            	vertical-align: bottom;
+                padding: 20px;
+            }
+            tr:hover {background-color: cyan;}
+            
+        </style>
+    </head>
+
+    <body>
+     
+    <table>
+        <tr>
+        <th>age</th>
+        <th>name</th>
+        <th>job</th>
+        </tr>
+        <tr>
+        <td>19</td>
+        <td>Jason</td>
+        <td>Waiter</td>
+        </tr>
+        <tr>
+        <td>18</td>
+        <td>Eason</td>
+        <td>Driver</td>
+        </tr>
+        <tr>
+        <td>17</td>
+        <td>Bason</td>
+        <td>Pilor</td>
+        </tr>
+
+    </table>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            table, th, td {
+                border: 6px solid olive;
+            }
+            table {
+                width: 80%;
+                height: 50%;
+                border-collapse: collapse;
+            }
+            th {
+                text-align: center;
+                background-color: aquamarine;
+            }
+            td {
+                vertical-align: bottom;
+            }
+            tr:hover {background-color: aqua;}
+
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+            <th>age</th>
+            <th>name</th>
+            <th>job</th>
+            </tr>
+            <tr>
+            <td>19</td>
+            <td>Jason</td>
+            <td>Waiter</td>
+            </tr>
+            <tr>
+            <td>18</td>
+            <td>Eason</td>
+            <td>Driver</td>
+            </tr>
+            <tr>
+            <td>17</td>
+            <td>Bason</td>
+            <td>Pilor</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+        p.a {
+            outline-style: dotted;
+            background-color: #00FF00;
+        }
+        p.b {
+            outline-style: dashed;
+            outline-color: #00FF00;
+        }
+        p.c {
+            outline-style: solid;
+            outline-width: 40px;
+        }
+        p.d {
+            outline-style: dotted;
+            outline-color: blueviolet;
+        }
+        p.e {
+            outline-style: initial;
+            outline-color: aqua;
+        }
+        p.f {
+            outline-style: ridge;
+            outline-color: coral;
+        }
+        p.g {
+            outline-style: groove;
+            outline-color: darkgreen;
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <p class = "a">this is p1</p>
+        <p class = "b">this is p2</p>
+        <p class = "c">this is p3</p>
+        <p class = "d">this is p4</p>
+        <p class = "e">this is p5</p>
+        <p class = "f">this is p6</p>
+        <p class = "g">this is p7</p>
+    </body>
+</html>
+
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            height: 50%;
+        }
+        table, th, td {
+            border: 3px solid tomato;
+        }
+        th {
+            background-color: aqua;
+            text-align: center;
+        }
+        td {
+            vertical-align: bottom;
+            padding: 10px;
+        }
+        tr:hover {background-color:#00FF00;}
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+            <th>heading 1</th>
+            <th>heading 2</th>
+            <th>heading 3</th>
+            </tr>
+            <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+            </tr>
+            <tr>
+            <td>data 4</td>
+            <td>data 5</td>
+            <td>data 6</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            p.a {
+                outline-style: auto;
+                outline-color: #00FF00;
+            }
+            p.b {
+                outline-style: dashed;
+                outline-color: #4CAF50;
+            }
+            p.c {
+                outline-style: dotted;
+                outline-color: aqua;
+            }
+            p.d {
+                outline-style: double;
+                outline-color: blue;
+            }
+            p.e {
+                outline-style: groove;
+                outline-color: cadetblue;
+            }
+            p.f {
+                outline-style: solid;
+                outline-color: cornflowerblue;
+            }
+            p.g {
+                outline-style: ridge;
+                outline-color: blueviolet;
+            }
+        </style>
+    </head>
+        
+    <body>
+        <p class = "a">p1</p>
+        <p class = "b">p2</p>
+        <p class = "c">p3</p>
+        <p class = "d">p4</p>
+        <p class = "e">p5</p>
+        <p class = "f">p6</p>
+        <p class = "g">p7</p>
+    </body>
+
+</html>
+
+<html>
+    <head>
+        <style>
+            div {
+                border: 5px solid cyan;
+                margin: 70px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>this is the body part</div>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            div {
+                border: 4px solid olive;
+                background-color: #00FF00;
+                margin: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>this is the paragraph</div>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            div {
+                border: 5px solid cyan;
+                background-color: #00FF00;
+                margin: 30px 20px 20px 30px;
+                padding: 40px 10px 90px 80px;
+                }
+            </style>
+
+    </head>
+
+    <body>
+        <div>this is the paragraph</div>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <style>
+            div.absolute {
+                position: relative;
+                border: 4px solid tomato;
+                background-color: #00FF00;
+                width: 300px;
+                height: 400px;
+            }
+            div.relative {
+                position: absolute;
+                border: 3px solid cyan;
+                background-color: #4CAF50;
+                height: 100px;
+                width: 300px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "absolute">this is relative</div>
+        <div class = "relative">this is absolute</div>
+    </body>
+</html>
+
+
+
+
+<html>
+    <head>
+        <style>
+            div.relative {
+                position: relative;
+                border: 4px solid cyan;
+                width: 400px;
+                height: 200px;
+            }
+            div.absolute {
+                position: absolute;
+                border: 3px solid tomato;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "relative">this is relative
+        <div class = "absolute">this is absolute</div></div>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            div.absolute {
+                position: absolute;
+                border: 3px solid tomato;
+                height: 200px;
+                width: 300px;
+            }
+            div.relative {
+                position: relative;
+                border: 4px solid cyan;
+                height: 400px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "absolute">this is absolute
+        <div class = "relative">this is relative</div></div>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            img {
+                float: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="/i/logo/w3logo-3.png" alt="W3School" style="width:170px;height:170px;">
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style type = "text/css"> 
+            h1 {
+                color:#00FF00;
+            }
+            h1 em {
+                color:aqua;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>this is an <em>important</em> heading</h1>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style type = "text/css">
+            h1 {
+                color:aqua;
+            }
+            h1 > strong {
+                color:blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>i really want <strong>this part</strong> to be purple</h1>
+        <h1>but not <em><strong>this part</strong></em></h1>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style type = "text/css">
+            li {
+                color: #00FF00;
+                font-size: 30px;
+                font-style: italic;
+            }
+            li + li {
+                color: blueviolet;
+                font-size: 20px;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <ol>
+                <li>object 1</li>
+                <li>object 2</li>
+                <li>object 3</li>
+                <li>object 4</li>
+            </ol>
+            <ul>
+                <li>object 5</li>
+                <li>object 6</li>
+                <li>object 7</li>
+                <li>object 8</li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <style>
+            div {
+                background-color: #00FF00;
+                text-align: center;
+                font-size: 40px;
+                font-style: italic;
+            }
+            div:hover {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>this is the textarea</div>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            a:link {
+                color: bisque;
+            }
+            a:visited {
+                color: aqua;
+            }
+            a:hover {
+                color: chocolate;
+            }
+            a:active {
+                color: blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1><a href = "https://www.yuque.com/exe/fuq503/kxgyfc#31730263">check this link out</a></h1>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            div {
+                background-color: #00FF00;
+                color: aqua;
+                text-align: center;
+                font-size: 40px;
+            }
+            div:hover {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>this is the textarea</div>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            p {
+                display:none;
+                background-color: #00FF00;
+                color: aqua;
+                text-align: center;
+                font-size: 40px;
+                font-style: italic;
+            }
+            div:hover p {
+                display:block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>over here<p>you got me</p></div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            p {
+                display:none;
+                background-color:cyan;
+                color:tomato;
+                font-size: 30px;
+                text-align: center;
+            }
+            div:hover p {
+                display:block;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div>check this part<p>you got me~</p></div>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <Style>
+            a:link {
+                color: #ddd;
+            }
+            a:visited {
+                color:yellowgreen;
+            }
+            a:hover {
+                color: aqua;
+            }
+            a:active {
+                color: blue;
+            }
+        </Style>
+    </head>
+
+    <body>
+        <h2><a href = "https://www.yuque.com/exe/fuq503/kxgyfc#c0f5880c">check this link out</a></h2>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            div {
+                background-color: #00FF00;
+                color: aqua;
+                text-align: center;
+                font-size: 40px;
+                font-style: italic;
+                padding: 100px 200px 100px 300px;
+                margin: 100px 200px 100px 200px;
+            }
+            div:hover {
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>this is the color changing part</div>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            p {
+                display: none;
+                background-color: #00FF00;
+                color: aqua;
+                font-size: 40px;
+                font-style: italic;
+            }
+            div:hover p {
+                display: block;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>look at this part<p>you got me</p></div>
+    </body>
+
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style> 
+            div.a {
+                margin: auto;
+                text-align: center;
+                background-color:cyan;
+                color: tomato;
+                font-size: 20px;
+                font-style: italic;
+                width: 70%;
+                height: 50%:
+
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class = "a"><p>this is the textarea</p></div>
+    </body>
+</html>
+
+ 
+<html>
+    <head>
+        <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src = "https://www.w3school.com.cn/i/logo/w3logo-1.png">
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            div.right {
+                float: right;
+                background-color: cyan;
+                color: tomato;
+                font-size: 40px;
+                text-align: center;
+                border: 3px solid olive;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "right"><p>this paragraph should be at the right side</p></div>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            div.center {
+                padding: 70px 0px;
+                text-align: center;
+                background-color: aqua;
+                color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "center">this part should be at the center</div>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <p id = "demo1">check this out</p> 
+        <button type = "button"
+        onclick = "document.getElementById('demo1').innerHTML = Date()">button1</button>
+
+        <p id = "demo2">check this out</p>
+        <button type = "button"
+        onclick = "myFunction()">button2</button>
+        
+        <script>
+        function myFunction() {
+            document.getElementById("demo2").innerHTML = "you got me";
+        }
+        </script>
+
+        <p id = "demo3">check this out</p>
+        <button type = "button"
+        onclick = "myFunction1()">button3</button>
+
+        <script>       
+        function myFunction1() {
+            document.getElementById("demo3").style.backgroundColor = "cyan";
+            document.getElementById("demo3").style.color = "lightgreen";
+            document.getElementById("demo3").style.fontSize = "40px";
+            document.getElementById("demo3").style.fontStyle = "italic";
+            document.getElementById("demo3").style.textAlign = "center";
+        } 
+        </script>
+
+        <form action = "/demo/demo_form.asp">
+        Your name:<br>
+        <input type = "text" name = "yourNameIs" value = ""><br>
+        Your ID:<br>
+        <input type = "text" name = "yourIDIs" value = ""><br>
+        <br>
+        <input type = "submit" value = "submit~">
+        </form>
+    </head>
+
+    <body>
+        <select>
+            <option value = "obj1">obj1</option>
+            <option value = "obj2">obj2</option>
+            <option value = "obj3">obj3</option>
+            <option value = "obj4">obj4</option>
+        </select>
+
+        <textarea cols = "40px" rows = "30px">this is the textarea</textarea>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            a:link {
+                color:#4CAF50;
+            }
+            a:visited {
+                color:#00FF00;
+            }
+            a:hover {
+                color:aqua;
+            }
+            a:active {
+                color:blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1><a href = "https://www.yuque.com/exe/fuq503/kxgyfc#321f2e9b">click me pls</a></h1>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            div:hover {
+                background-color: cyan;
+                color: tomato;
+                font-size: 40px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "a">why not have a try?</div>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            p {
+                display: none;
+                background-color: aqua;
+                color: tomato;
+                font-size: 45px;
+                font-style: italic;
+                padding: 70px 100px 200px 70px;
+                margin: auto;
+            }
+            div:hover p {
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "center">put it over me pls<p>you got me~</p></div>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            li a {
+                display: block;
+                background-color: aqua;
+                width: 20%;
+            }
+            li a:hover:not(.active) {
+                background-color: blue;
+                color: brown;
+            }
+            li a.active {
+                background-color: chartreuse;
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a class = "active" href = "#Main">Main content</a></li>
+            <li><a href = "#link2">the link2</a></li>
+            <li><a href = "#link3">the link3</a></li>
+            <li><a href = "#link4">the link4</a></li>
+            <li><a href = "#link5">the link5</a></li>
+        </ul>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <style>
+            ul {
+                border: 3px solid black;
+                list-style-type: none;
+                background-color: aqua;
+                color:seagreen;
+                margin: 0px;
+                padding: 0px;
+                width: 200px;
+            }
+            li a {
+                display: block;
+                width: 30%;
+                padding: 8px 16px;
+                font-size: 40px;
+                font-style: italic;
+            }
+            li a:hover:not(.active) {
+                background-color:blueviolet;
+                color: tomato;
+            }
+            li a.active {
+                background-color: #00FF00;
+                color: tomato;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <ul>
+            <li><a class = "active" href = "#Home">Home</a></li>
+            <li><a href = "#Content">Content</a></li>
+            <li><a href = "#Table">Table</a></li>
+            <li><a href = "#Index">Index</a></li>
+        </ul>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            ul {
+                border: 3px solid black;
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                background-color: aqua;
+            }
+            li {
+                display: inline;
+                border-right: 1px solid white;
+            } 
+            li a {              
+                color: tomato;
+                font-size: 40px;
+                font-style: oblique;
+                padding: 4px 16px;
+            }
+            li a.active {
+                background-color: blueviolet;
+            }
+            li a:hover:not(.active) {
+                background-color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a class = "active" href = "#Home">Home</a></li>
+            <li><a href = "#Content">Content</a></li>
+            <li><a href = "#Table">Table</a></li>
+            <li><a href = "#Index">Index</a></li>
+        </ul>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                background-color: aqua;
+                border: 3px solid black;
+                padding:16px 7px;
+                margin: 0px;
+                width: 30%;
+            }
+            li a.active {
+                background-color: blue;
+            }
+            li a:hover:not(.active) {
+                background-color: brown;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a class = "active" href = "#Home">Home</a></li>
+            <li><a href = "#Content">Content</a></li>
+            <li><a href = "#Index">Index</a></li>
+            <li><a href = "#Context">Context</a></li>
+            <li><a href = "#Demo">Demo</a></li>
+        </ul>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                background-color: aqua;
+                border: 3px solid black;
+                padding:0px;
+                margin: 0px;
+            }
+            li {
+                display: inline;
+            }
+            li a {
+                color: tomato;
+                font-size: 20px;
+                font-style: oblique;
+                padding: 4px 16px;
+            }
+            li a.active {
+                background-color: blue;
+            }
+            li a:hover:not(.active) {
+                background-color: brown;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <ul>
+            <li><a class = "active" href = "#Home">Home</a></li>
+            <li><a href = "#Content">Content</a></li>
+            <li><a href = "#Index">Index</a></li>
+            <li><a href = "#Context">Context</a></li>
+            <li><a href = "#Demo">Demo</a></li>
+        </ul>
+    </body>
+
+</html>
+
+
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                background-color: aqua;
+                border: 3px solid black;
+                width: 30%;
+            }
+            li {
+                width: 100%;
+                color: tomato;
+                border: 1px solid black;
+                font-size: 40px;
+                font-style: italic;
+            }
+            li a.active {
+                background-color: blue;
+            }
+            li a:hover:not(.active) {
+                background-color: brown;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <ul>
+            <li><a class = "active" href = "#Home">Home</a></li>
+            <li><a href = "#Content">Content</a></li>
+            <li><a href = "#Context">Context</a></li>
+            <li><a href = "#Heading">Heading</a></li>
+            <li><a href = "#Nav">Nac</a></li>
+        </ul>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            ul {
+                background-color: aqua;
+                color: tomato;
+                border: 3px solid black;
+                margin: 0px;
+                padding: 16px 7px;
+                width: 100%;
+            }
+            li {
+                display: inline;
+            }
+            li a {
+                font-size: 40px;
+                font-style: italic;
+            }
+            li a.active {
+                background-color: crimson;
+            }
+            li a:hover:not(.active) {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a class = "active" href = "#Home">Home</a></li>
+            <li><a href = "#Content">Content</a></li>
+            <li><a href = "#Context">Context</a></li>
+            <li><a href = "#Heading">Heading</a></li>
+            <li><a href = "#Nav">Nac</a></li>
+        </ul>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            img {
+                display: block;
+                margin: 0px;
+                padding: 0px;
+                opacity: 100%;
+            }
+            img:hover {
+                opacity: 0%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src = "/i/photo/tulip-red.jpg">
+    </body>
+</html>
+
+
+<html>
+    <body>
+
+        <video width = "320" height = "240" controls = "controls" autoplay = "autoplay">
+            <source src = "/i/movie.webm" type = "video/webm">
+        </video>
+    </body>
+</html>
+
+<html>
+    <body>
+        <video width = "320" height = "400" controls = "controls" autoplay = "autoplay">
+            <source src= "/i/movie.mp4" type = "video/mp4">
+        </video>
+    </body>
+</html>
+
+<html>
+    <body>
+        <video width = "300" height = "450" controls = "controls" autoplay = "autoplay">
+            <source src = "/i/movie.ogg" type = "video/ogg">
+        </video>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                border: 3px solid black;
+                width: 20%;
+            }
+            li {
+                background-color: cyan;
+                font-size: 40px;
+                font-style: italic;
+            }
+            li a.active {
+                background-color: blue;
+            }
+            li a:hover:not(.active) {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a class = "active" href = "#Home">Home</a></li>
+            <li><a href = "#Content">Content</a></li>
+            <li><a href = "#Context">Context</a></li>
+            <li><a href = "#Demo">Demo</a></li>
+            <li><a href = "#Menu">Menu</a></li>
+        </ul>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                border: 3px solid black;
+            }
+            li {
+                display: inline;
+                background-color: cyan;
+                font-size: 40px;
+                font-style: italic;
+            }
+            li a.active {
+                background-color: blue;
+            }
+            li a:hover:not(.active) {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a class = "active" href = "#Home">Home</a></li>
+            <li><a href = "#Content">Content</a></li>
+            <li><a href = "#Context">Context</a></li>
+            <li><a href = "#Demo">Demo</a></li>
+            <li><a href = "#Menu">Menu</a></li>
+        </ul>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+            button.b {
+                background-color: cyan;
+                color: tomato;
+            }
+            button.c {
+                background-color: #00FF00;
+                color: blueviolet;
+            }
+            button.d {
+                background-color: brown;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id = "demo1">check this out</p>
+        <button class = "b" type = "button"
+        onclick = "document.getElementById('demo1').innerHTML = Date()">button1</button>
+
+        <p id = "demo2">click this button pls</p>
+        <button class = "c" type = "button"
+        onclick = "myFunction1()">button2</button>
+        <script>
+            function myFunction1() {
+                document.getElementById("demo2").innerHTML = "you got me";
+            }
+        </script>
+
+        <p id = "demo3">check this one</p>
+        <button class = "d" type = "button"
+        onclick = "myFunction2()">button3</button>
+        <script>
+            function myFunction2() {
+                document.getElementById("demo3").style.backgroundColor = "seagreen";
+                document.getElementById("demo3").style.color = "black";
+                document.getElementById("demo3").style.fontSize = "40px";
+                document.getElementById("demo3").style.fontStyle = "italic";
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            input.a {
+                background-color: #00FF00;
+                color: black;
+            }
+            input.b {
+                background-color: aqua;
+                color: tomato;
+            }
+            input.c {
+                background-color: blueviolet;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action = "/demo/demo_form.asp">
+            Your name:<br>
+            <input class = "a" type = "text" name = "yourNameIs" value = ""><br>
+            Your job:<br>
+            <input class = "b" type = "text" name = "yourJobIs" value = ""><br>
+            <br>
+            <input class = "c" type = "submit" value = "submit~"><br>
+
+        </form>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            option {
+                font-size: 40px;
+                font-style: italic;
+            }
+            option.a {
+                background-color: #00FF00;
+                color: black;
+            }
+            option.b {
+                background-color: aqua;
+                color: tomato;
+            }
+            option.c {
+                background-color: blueviolet;
+                color: chartreuse;
+            }
+            option.d {
+                background-color: brown;
+                color: crimson;
+            }
+        </style>
+    </head>
+
+    <body>
+        <select>
+            <option class = "a" value = "Lin">Lin</option>
+            <option class = "b" value = "Xin">Xin</option>
+            <option class = "c" value = "Qin">Qin</option>
+            <option class = "d" value = "Pin">Pin</option>
+        </select>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            textarea.a {
+                background-color: aqua;
+                color: tomato;
+                font-size: 40px;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+
+    <body>
+        <textarea class = "a" cols = "30" rows = "20">this is the textarea</textarea>
+    </body>
+
+</html>
+
+
+
+<html>
+    <body>
+        <video width = "300" height = "200" controls = "controls" autoplay = "autoplay">
+            <source src = "/i/movie.webm" type = "video/webm">
+            <object width = "300" height = "200" data = "/i/movie.webm">
+                <embed width = "300" height = "200" src = "/i/movie.swf">    
+            </object>
+        </video>
+    </body>
+</html>
+
+
+
+<html>
+    <body>
+        <audio controls = "controls">
+            <source src = "/i/song.ogg" type = "audio/ogg">
+                <embed height = "300" width = "200" src = "/i/song.ogg">
+        </audio>
+    </body>
+</html>
+
+-----------------------------------------
+
+
+<html>
+    <body>
+        <video width = "300" height = "200" controls = "controls" autoplay = "autoplay">
+            <source src = "/i/movie.webm" type = "video/webm">
+            <object data = "/i/movie.webm" width = "300" height = "200">
+                <embed width = "300" height = "200" src = "/i/movie.swf">
+            </object>
+        </video>
+
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <audio controls = "controls">
+            <source src = "/i/song.mp3" type = "audio/mp3">
+                <embed width = "300" height = "200" src = "/i/song.mp3">
+        </audio>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <video width = "200" height = "300" controls = "controls" autoplay = "autoplay">
+            <source src = "/i/movie.mp4" type = "video/mp4">
+            <object data = "/i/movie.mp4" width = "200" height = "300">
+                <embed width = "200" height = "300" src = "/i/movie.swf">
+            </object>
+
+        </video>
+
+    </body>
+</html>
+
+<html>
+    <body>
+        <audio controls = "controls">
+            <source src = "/i/song.mp3" type = "audio/mp3">
+                <embed width = "300" height = "200" src = "/i/song.mp3">
+        </audio>
+
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <form>
+            <input type = "radio" name = "age" value = "18">18<br>
+            <br>
+            <input type = "radio" name = "age" value = "19">19<br>
+        </form>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <form>
+            <input type = "radio" name = "sex" value = "male">male<br>
+            <input type = "radio" name = "sex" value = "female">female<br>
+        </form>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+            <fieldset>
+                <legend>Your age:</legend><br>
+            <input type = "radio" name = "age" value = "18">18<br>
+            <input type = "radio" name = "age" value = "19">19<br>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+            Your name:<br>
+            <input type = "text" name = "yourNameIs" value = ""><br>
+            Your job:<br>
+            <input type = "text" name = "yourJobIs" value = ""><br>
+            <br>
+            <input type = "submit" value = "submit~">
+        </form>
+    </body>
+
+</html>
+
+<html>
+    <head>
+        <style>
+            fieldset {
+                background-color: cadetblue;
+                color: blue;
+                width: 40%;
+            }
+        </style>
+    </head>
+    <body>
+        <form action = "/demo/demo_form.asp">
+            <fieldset>
+                <legend>what's your favorite brand</legend>
+            <input type = "radio" name = "favorite" value = "APPLE">APPLE<br>
+            <input type = "radio" name = "favorite" value = "SAMSUNG">SAMSUNG<br>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            input.a {
+                background-color: #00FF00;
+                color: black;
+                font-size: 40px;
+            }
+            input.b {
+                background-color: aqua;
+                color: tomato;
+                font-size: 40px;
+            }
+            fieldset {
+                width: 50%;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form action = "/dmo/demo_form.asp">
+            <fieldset>
+                <legend>Personal information</legend>
+            your name:<br>
+            <input class = "a" type = "text" name = "name" value = ""><br>
+            your password:<br>
+            <input class = "b" type = "password" name = "password" value = ""><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            fieldset {
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <form action = "/demo/demo_form.asp">
+            <fieldset>
+            <input type = "checkbox" name = "game" value = "Sekiro">Sekiro<br>
+            <input type = "checkbox" name = "game" value = "Bloodborne">Bloodborne<br>
+            <br>
+            <input type = "submit" value = "submit~">
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+            your age:<br>
+            <input type = "number" name = "age" min = "1" max = "18"><br>
+            <br>
+            <input type = "submit" value = "submit">
+        </form>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+            Your birthday:
+            <input type = "date" name = "date">
+            <br>
+            <input type = "submit" value = "submit~">
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        your favorite color is:<br>
+        <input type = "color" name = "color" value = ""><br>
+        <input type = "submit" value = "submit">
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        choose your range:<br>
+        <input type = "range" name = "range" value = ""><br>
+        <input type = "submit" value = "submit">
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        choose your month:<br>
+        <input type = "month" name = "month" value = ""><br>
+        <input type = "submit" value = "submit">
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        choose your week:<br>
+        <input type = "week" name = week value = ""><br>
+        <input type = "submit" value = "submit">
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        choose your time:<br>
+        <input type = "time" name = time value = ""><br>
+        <input type = "submit" value = "submit">
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        your email:<br>
+        <input type = "email" name = email value = ""><br>
+        <input type = "submit" value = "submit">
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        search on GOOGLE:<br>
+        <input type = "search" name = website value = ""><br>
+        <input type = "submit" value = "submit">
+        </form>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        your sex:<br>
+        <input type = "text" name = "sex" value = "you can't change this" readonly><br>
+        your name:<br>
+        <input type = "text" name = "sex" value = ""><br>
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        your sex:<br>
+        <input type = "text" name = "sex" value = "you can't change this" disabled><br>
+        your name:<br>
+        <input type = "text" name = "sex" value = ""><br>
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        your sex:<br>
+        <input type = "text" name = "sex" value = "you can't change this" size = "40px"><br>
+        your name:<br>
+        <input type = "text" name = "sex" value = ""><br>
+        </form>
+    </body>
+</html>
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        your sex:<br>
+        <input type = "text" name = "sex" value = ""><br>
+        your name:<br>
+        <input type = "text" name = "sex" value = "" required><br>
+        <br>
+    <input type = "submit" value = "submit~">
+        </form>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+            your age:
+            <Input type = "number" name = "age" min = "1" max = "18" step = "3"><br>
+            <input type = "submit" value = "submit~">
+        </form>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+            p {
+                border: 3px solid black;
+                color: tomato;
+                background-color: cyan;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <p>this has a border</p>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            p {
+                border: 3px black;
+                border-style: solid dashed double dotted;
+                border-radius: 5px;
+                color: tomato;
+                background-color: cyan;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <p>this has a border</p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            p.a {
+                border: 3px solid black;
+                background-color: cyan;
+                width: 50%;
+                font-size: 40px;
+                font-style: italic;
+                opacity: 100%;
+            }
+            p.b {
+                border: 1px dashed blue;
+                background-color: #00FF00;
+                width: 60%;
+                font-size: 45px;
+                font-style: oblique;
+                opacity: 50%;
+            }
+            p.c {
+                border: 5px dotted red;
+                background-color: blueviolet;
+                width: 70%;
+                font-size: 30px;
+                font-style: normal;
+                opacity: 0%;
+            }
+            p.c:hover {
+                opacity: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <p class = "a">this is paragraph 1</p>
+        <p class = "b">this is paragraph 2</p>
+        <p class = "c">this is paragraph 3</p>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            body {
+                background-image: http://kidsparkeducation.org/sites/default/files/styles/full/public/media/misc/google-logo.jpg?itok=9c-Tituf;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+            }
+        </style>
+    </head>
+</html>
+
+
+<html>
+    <body>
+        <form action = "/demo/demo_form.asp">
+        your age:
+        <input type = "number" name = "age" min = "1" max = "18" step = "5"><br>
+        <input type = "submit" value = "submit~">
+        </form>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+            input.a {
+                background-color: cyan;
+                color: tomato;
+                font-size: 40px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action = "/demo/demo_form.asp">
+        your name:<br>
+        <input class = "a" type = "text" name = "yourNameIs" value = ""><br>
+        Your job:<br>
+        <input type = "radio" name = "yourJobIs" value = "worker">worker<br>
+        <input type = "radio" name = "yourJobIs" value = "waiter">waiter<br>
+        <br>
+        <input type = "submit" value = "submit~">
+        </form>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            p.a {
+                white-space: nowrap;
+                border: 3px solid black;
+                width: 200px;
+                overflow: hidden;
+                text-overflow: clip;
+            }
+            p.b {
+                white-space: nowrap;
+                border: 3px solid black;
+                width: 200px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p.b:hover {
+                overflow: visible;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p class = "a">this is a very loooooooooooooooong text</p>
+        <p class = "b">this is a very loooooonnnnnnnnnnng text</p>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <style>
+            p.a {
+                border: 3px solid black;
+                width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: clip;
+            }
+            p.a:hover {
+                overflow: visible;
+            }
+            p.b {
+                border: 4px dashed black;
+                width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p.b:hover {
+                overflow: visible;
+            }
+            p.c {
+                border: 4px dashed black;
+                width: 200px;
+                word-wrap: break-word;
+            }
+            p.d {
+                border: 4px dashed black;
+                width: 200px;
+                word-break: keep-all;
+            }
+            p.e {
+                writing-mode: vertical-lr;
+            }
+        </style>
+    </head>
+    <body>
+        <p class = "a">this is a veryveryveryveryveryveryvery long sentence</p>
+        <p class = "b">this is a veryveryveryveryveryveryvery long sentence</p>
+        <p class = "c">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+        <p class = "d">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+        <p class = "e">transform this sentence</p>
+    </body>
+
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+            div {
+                background-color: cyan;
+                color: tomato;
+                width: 200px;
+                height: 100px;
+                transition: width 2s, height 3s, transform 3s;
+                transition-delay: 2s;
+            }
+            div:hover {
+                width: 400px;
+                height: 300px;
+                transform: rotate(180deg);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>transition has coming</div>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <style>
+            div {
+                background-color: #00FF00;
+                color: purple;
+                width: 200px;
+                height: 300px;
+                transition: width 2s, height 3s, transform 1s;
+                transition-delay: 1s;
+            }
+            div:hover {
+                width: 500px;
+                height: 600px;
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div>look what I've changed</div>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+            p {
+                background-color: cyan;
+                color: tomato;
+                font-size: 40px;
+                font-style: italic;
+                width: 200px;
+                height: 300px;
+                transition: width 2s, height 1s, transform 2s;
+                transition-delay: 1s;
+            }
+            p:hover {
+                width: 400px;
+                height: 500px;
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+    <body>
+        <p>put on me</p>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <button type = "button"
+        onclick = "document.getElementById('demo1').innerHTML = Date()">click me to show the date and time</button>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <var x>
+            x = 7;
+        </var>
+    </body>
+</html>
+
+-----------------------------------------
+
+
+<html>
+    <body>
+        <ul>
+            <li>obj1</li>
+            <li>obj2</li>
+            <li>obj3</li>
+            <li>obj4</li>
+        </ul>
+
+        <ol>
+            <li>abj1</li>
+            <li>abj2</li>
+            <li>abj3</li>
+            <li>abj4</li>
+        </ol>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            button.a {
+                background: #00FF00;
+                color: black;
+                width: 200px;
+                height: 100px;
+            }
+            button.b {
+                background-color: cyan;
+                color: tomato;
+                font-size: 40px;
+            }
+            button.c {
+                background-color:tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <p id = "demo1">check this out</p>
+        <button class = "a" type = "button"
+        onclick = "document.getElementById('demo1').innerHTML = Date()">button1</button>
+
+        <p id = "demo2">check this out</p>
+        <button class = "b" type = "button"
+        onclick = "myFunction1()">button2</button>
+        <script>
+            function myFunction1() {
+                document.getElementById("demo2").innerHTML = "you got me~";
+            }
+        </script>
+
+        <p id = "demo3">check this out</p>
+        <button class = "c" type = "button"
+        onclick = "myFunction2()">button3</button>
+        <script>
+            function myFunction2() {
+                document.getElementById("demo3").style.backgroundColor = "cyan";
+                document.getElementById("demo3").style.color = "tomato";
+                document.getElementById("demo3").style.fontSize = "40px";
+                document.getElementById("demo3").style.fontStyle = "italic";
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            document.getElementById("demo1").innerHTML = "Eason"+"Lin"    
+        </script>
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            img {
+                opacity: 50%;
+            }
+            img:hover {
+                opacity: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <img src = "http://kidsparkeducation.org/sites/default/files/styles/full/public/media/misc/google-logo.jpg?itok=9c-Tituf">
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            p {
+                background-color: lightgreen;
+                color: black;
+                width: 200px;
+                height: 300px;
+                transition: width 2s, height 1s, transform 1s;
+                transition-delay: 1s;
+            }
+            p:hover {
+                width: 400px;
+                height: 500px;
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+    <body>
+        <p class = "a">put it over me</p>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">add those words together</p>
+        <script>  
+            document.getElementById("demo1").innerHTML = "EASON" + 911
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var x = 7;
+            var y = 8;
+            var z = x - y;
+            document.getElementById("demo1").innerHTML = z;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var a = 101;
+            var b = 202;
+            var c = a * b;
+            document.getElementById("demo1").innerHTML = c;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var text1 = "EASON";
+            var text2 = "Lin";
+            var text3 = text1 + text2;
+            document.getElementById("demo1").innerHTML = text3;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var obj1 = 7 + "EASON";
+            var obj2 = "LIN" + 6;
+            var sum = obj1 + obj2;
+            document.getElementById("demo1").innerHTML = sum;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var a = 101;
+            var b = 202;
+            var c = a * b;
+            document.getElementById("demo1").innerHTML = c;
+        </script>
+    </body>
+</html>
+
+// power
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var a = 101;
+            var b = 202;
+            var c = a**2;
+            document.getElementById("demo1").innerHTML = c;
+        </script>
+    </body>
+</html>
+
+//赋值
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var x = 9;
+            x += 9;
+            document.getElementById("demo1").innerHTML = x;
+        </script>
+</html>
+
+//review
+int 整数 double 小数 string 字符串 array 列 arrayList 列表 intArrayList 整数列 boolean 布尔正误
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var a = Boolean(9<10);
+            var b = Boolean(10<9);
+            document.getElementById("demo1").innerHTML = a + b;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">check this out</p>
+        <script>
+            var date;
+            switch (new Date().getDay()) {
+                case 0:
+                    date = "Monday";
+                    break;
+                case 1:
+                    date = "Tuesday";
+                    break;
+                case 2:
+                    date = "Wednesday";
+                    break;
+                case 3:
+                    date = "Thursday";
+                    break;
+                case 4:
+                    date = "Friday";
+                    break;
+                case 5:
+                    date = "Saturday";
+                    break;  
+                case 6:
+                    date = "Sunday";
+            }
+            document.getElementById("demo1").innerHTML = "Today is " + date;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i;
+            var text = "";
+            for (i = 0; i < 10; i++) {
+                text += "<br>the number is " + i;
+            }
+            document.getElementById("demo1").innerHTML = text;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i;
+            var text = "";
+            for (i = 0; i < 10; i++) {
+                text = "<br>the number is " + i;
+                i++; //add twice
+            }
+            document.getElementById("demo1").innerHTML = text;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i = 0;
+            var text = "";
+            while (i < 10) {
+                text += "<br>the number is " + i;
+                i++;
+            }
+            document.getElementById("demo1").innerHTML = text;
+        </script>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <head>
+        <style>
+            p {
+                display: block;  
+            }
+            p:hover {
+                background: #00FF00;
+                color: black;
+                font-size: 50px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p>put it over me</p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            p {
+                background-color: aqua;
+                color: tomato;
+                width: 200px;
+                height: 300px;
+                transition: width 2s, height 1s, transform 1s;
+                transition-delay: 1s;
+            }
+            p:hover {
+                width: 600px;
+                height: 500px;
+                transform: rotate(360deg);
+            }
+        </style>
+    </head>
+        <body>
+            <p>put it over me</p>
+        </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"];
+            document.getElementById("demo1").innerHTML = a[0];
+        </script>
+    </body>
+</html>
+
+//length
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            document.getElementById("demo1").innerHTML = a.length;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            document.getElementById("demo1").innerHTML = a[a.length - 1];
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            document.getElementById("demo1").innerHTML = a;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.pop();
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.shift();
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.unshift("elife");
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+//a.shift() 删第一个词
+//a.unshift("xx")最前加词
+//a.pop()删最后一个词
+//a.push("xx")最后加词
+
+
+//a.sort()
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.unshift("elife");
+            a.sort();
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+//a.reverse()
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = ["apple", "samsung", "nokia"]
+            a.push("huawei");
+            a.unshift("elife");
+            a.reverse();
+            document.getElementById("demo1").innerHTML = a.toString();
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var eason = {
+                age:19,
+                firstName:"Eason",
+                lastName:"Lin",
+                gender:"male"
+            }
+            document.getElementById("demo1").innerHTML = eason.firstName + eason.lastName + " is " +
+                 eason.age + " years old and he is a " + eason.gender;
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var Eason = {
+                age:19,
+                firstname:"Eason",
+                lastname:"Lin",
+                job:"worker",
+                gender:"male"
+            }
+            document.getElementById("demo1").innerHTML = Eason.firstname + " " + Eason.lastname + " is " + Eason.age + " years old." + 
+                "his job is a " + Eason.job + " he is a " + Eason.gender;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var Eason = myCalculate(10, 5);
+            document.getElementById("demo1").innerHTML = Eason;
+            function myCalculate(x, y) {
+                return result = x/y;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var a = myFunction(5, 6);
+            document.getElementById("demo1").innerHTML = a;
+
+            function myFunction(x, y) {
+                return a = x * y;
+            }
+        </script>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var eason = {
+                firstName:"Eason",
+                lastName:"Lin",
+                age:19,
+                gender:"male"
+            }
+            document.getElementById("demo1").innerHTML = eason.firstName + " " + eason.lastName + " is " 
+                + eason.age + " years old and he is a " + eason.gender;
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var aE = myFunction1(3, 5, 8);
+            document.getElementById("demo1").innerHTML = aE;
+            function myFunction1(x, y, z) {
+                return aE = x*y*z;
+            }
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var eason = myFunction(12);
+            document.getElementById("demo1").innerHTML = eason;
+            function myFunction(x) {
+                return eason = x**4;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>      
+            function myFunction(x, y) {
+                if (x > y) {
+                    return y;
+                } else if (x < y) {
+                    return x;
+                } else { // x == y
+                    return 0;
+                }
+            }
+            document.getElementById("demo1").innerHTML = myFunction(3, 1);
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            function myCalculate(x, y, z) {
+                if (x == y && y != z) {
+                    return x;
+                } else if (y == z && x != z) {
+                    return y;
+                } else if (x == z && x != y) {
+                    return z;
+                } else {
+                    return 0;
+                }
+            }
+            document.getElementById("demo1").innerHTML = myCalculate(1, 2, 1);
+        </script>
+
+    </body>
+
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            function myCalculate() {
+                var i;
+                var sum = 0;
+                for (i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+            document.getElementById("demo1").innerHTML = myCalculate(1, 2, 3, 4, 
+            5, 6, 7, 8, 9, 10);
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            function myFunction() {
+                var i;
+                var sum = 0;
+                for (i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+            document.getElementById("demo1").innerHTML = myFunction(23, 24, 25, 90, 91, 98);
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <h1>how about the sum?</h1>
+        <p id = "demo1"></p>
+        <script>
+            function easonCalculator() {
+                var i;
+                var sum = 0;
+                for (i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+            document.getElementById("demo1").innerHTML = easonCalculator(99999, 9999, 999, 99, 9);
+        </script>
+    </body>
+</html>
+
+//call method
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var Eason = {
+                fullName: function(city, country) {
+                    return this.firstName + " " + this.lastName + "," + city + "," + country + ".";
+                }
+            }    
+            var EasonA = {
+                firstName: "Cristiano",
+                lastName: "Ronaldo"
+            }
+            var EasonB = {
+                firstName: "Leonel",
+                lastName: "Messi"
+            }
+            var a = Eason.fullName.call(EasonA, "Seattle", "USA");
+            document.getElementById("demo1").innerHTML = a;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var Eason = {
+                fullName: function(city, country) {
+                    return this.firstName + " " + this.lastName + "," + city + "," + country + ".";
+                }
+            }    
+            var EasonA = {
+                firstName: "Cristiano",
+                lastName: "Ronaldo"
+            }
+            var EasonB = {
+                firstName: "Leonel",
+                lastName: "Messi"
+            }
+            var a = Eason.fullName.call(EasonB, "Amoy", "China");
+            document.getElementById("demo1").innerHTML = a;
+        </script>
+    </body>
+</html>
+
+//apply method
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var Eason = {
+                fullName: function() {
+                    return this.firstName + " " + this.lastName + ".";
+                }
+            }    
+            var EasonA = {
+                firstName: "Cristiano",
+                lastName: "Ronaldo"
+            }
+            var EasonB = {
+                firstName: "Leonel",
+                lastName: "Messi"
+            }
+            var a = Eason.fullName.apply(EasonB);
+            document.getElementById("demo1").innerHTML = a;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var Eason = {
+                fullName: function() {
+                    return this.firstName + " " + this.lastName + ".";
+                }
+            }    
+            var EasonA = {
+                firstName: "Cristiano",
+                lastName: "Ronaldo"
+            }
+            var EasonB = {
+                firstName: "Leonel",
+                lastName: "Messi"
+            }
+            var a = Eason.fullName.apply(EasonA);
+            document.getElementById("demo1").innerHTML = a;
+        </script>
+    </body>
+</html>
+
+//REVIEW
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i;
+            var sum = "";
+            for (i = 0; i < 100; i++) {
+                sum += "<br>my age is " + i;
+            }   
+            document.getElementById("demo1").innerHTML = sum;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i;
+            var sum = "";
+            for (i = 100; i > 0; i--) {
+                sum += "<br>my age is " + i;
+            }   
+            document.getElementById("demo1").innerHTML = sum;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i = 0;
+            var sum = "";
+            while (i < 100) {
+                sum += "<br>my age is " + i;
+                i++;
+            }   
+            document.getElementById("demo1").innerHTML = sum;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            var i = 100;
+            var sum = "";
+            while (i > 0) {
+                sum += "<br>my age is " + i;
+                i--;
+            }   
+            document.getElementById("demo1").innerHTML = sum;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h2>wanna get the result?
+        <p id = "demo1"></p>
+        <script>
+            function myFunction(x, y) {
+                if (x > y) {
+                    return (x+y);
+                } else if (x < y) {
+                    return (x-y);
+                } else { // x == y
+                    return (x*y);
+                }
+            }
+            document.getElementById("demo1").innerHTML = myFunction(3, 40);    
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h1>try this one</h1>
+        <p id = "demo1"></p>
+        <script>
+            function easonCalculator() {
+                var i;
+                var sum = 0;
+                for (i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+            document.getElementById("demo1").innerHTML = easonCalculator(123456, 12345, 1234, 123, 12, 1.2);       
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+            p {
+                background-color: cyan;
+                color: tomato;
+                font-size: 30px;
+                font-style: italic;
+                padding: 0 12px;
+                width: 200px;
+                height: 300px;
+                transition: width 2s, height 1s, transform 1s;
+                transition-delay: 1s;
+                opacity: 50%;
+            }
+            p:hover {
+                width: 400px;
+                height: 600px;
+                transform: rotate(360deg);
+                opacity: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>personal information: </h1>
+        <p id = "demo1"></p>
+        <script>
+            var eason = {
+                firstName:"Eason",
+                lastName:"Lin",
+                age:19,
+                gender:"male",
+                hobby:"film making"
+            }
+            document.getElementById("demo1").innerHTML = eason.firstName + " " + eason.lastName +  " is " + eason.age 
+                + "  years old and he is a " + eason.gender + ". He loves " + eason.hobby + " as well.";
+        </script>
+    </body>
+</html>
+
+
+//DOM
+<html>
+    <body>
+        <script>
+            document.write(Date());
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id = "demo1">try this out</p>
+        <button type = "button"
+        onclick = "document.getElementById('demo1').innerHTML = Date()">button1</button>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id = "demo1">put it on me</p>
+        <button type = "button"
+        onclick = "myFunction()">button2</button>
+        <script>
+            function myFunction() {
+                document.getElementById("demo1").innerHTML = "you got me";
+            }
+        </script>
+    </body>
+</html>
+
+
+// click 
+<html>
+    <body>
+        <h1 onclick = "this.innerHTML = 'you got me~'">click me~</h1>
+    </body>
+</html>
+
+-----------------------------------------
+
+<html>
+    <body>
+        <script>
+            document.write(Date());
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <h1 onclick = "this.innerHTML = 'you got me~'">click me~</h1>
+    </body>
+</html>
+
+
+//alert
+<html>
+    <body>
+        <button id = "button">button1</button>
+        <script>
+            document.getElementById("button").addEventListener("click", function() { alert("you got me ~");});
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <button id = "demo1">click me~</button>
+        <script>
+            document.getElementById("demo1").addEventListener("click", function() {alert("this one");});
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <button id = "demo1">click me~</button>
+        <script>
+            var a = document.getElementById("demo1");
+            a.addEventListener("click", myFunction1);
+            a.addEventListener("click", myFunction2);
+
+            function myFunction1() {
+                alert("first one");
+            }
+            function myFunction2() {
+                alert("second one");
+            }
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <button id = "demo1">click me ~</button>
+        <script>
+            var a = document.getElementById("demo1")
+            a.addEventListener("click", myFunction);
+            a.addEventListener("click", myFunction1);
+            a.addEventListener("click", myFunction2);
+            function myFunction() {
+                alert("appears this one");
+            }
+            function myFunction1() {
+                alert ("the second one");
+            }
+            function myFunction2() {
+                alert("third one");
+            }
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <button id = "demo1">click me</button>
+        <script>
+            var eason = document.getElementById("demo1");
+            eason.addEventListener("click", myFunction1);
+            eason.addEventListener("click", myFunction2);
+            eason.addEventListener("click", myFunction3);
+            eason.addEventListener("click", myFunction4);
+
+            function myFunction1() {
+                alert ("remember me?");
+            }
+            function myFunction2() {
+                alert ("wanna quit?");
+            }
+            function myFunction3() {
+                alert ("I'm still here");
+            }
+            function myFunction4() {
+                alert ("okay bye");
+            }
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <body>
+        <p id = "demo1"></p>
+        <script>
+            function myFunction(x, y) {
+                if (x > y) {
+                    return x;
+                } if (x < y) {
+                    return y;
+                } else { // x = y
+                    return 0;
+                }
+            }
+            document.getElementById("demo1").innerHTML = myFunction(20, 4);
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <body>
+        <button id = "demo1">click me</button>
+        <script>
+            var biSharp = document.getElementById("demo1");
+            biSharp.addEventListener("click", myFunction1);
+            biSharp.addEventListener("click", myFunction2);
+            biSharp.addEventListener("click", myFunction3);
+
+            function myFunction1() {
+                alert ("miss me?");
+            }
+            function myFunction2() {
+                alert ("don't forget me");
+            }
+            function myFunction3() {
+                alert ("swear to me");
+            }
+        </script>
+    </body>
+</html>
